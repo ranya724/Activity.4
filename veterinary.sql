@@ -131,3 +131,6 @@ VALUES
 (8, 8, '2023-04-18 00:00:00', 5, 'Spaying', 'N/A', 'Successful surgery'),
 (9, 9, '2023-05-02 00:00:00', 4, 'Allergy', 'Antihistamines', 'Prescribed antihistamines'),
 (10, 10, '2023-05-20 00:00:00', 6, 'Conjunctivitis', 'Eye drops', 'Prescribed eye drops');
+
+UPDATE owners
+SET registereddate = CURDATE();
