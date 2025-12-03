@@ -162,3 +162,12 @@ JOIN animals an ON o.ownerid = an.ownerid
 JOIN appointments a ON an.animalid = a.animalid
 WHERE o.ownerid = 1
 GROUP BY o.ownerid, o.ofirstname, o.olastname;
+
+SELECT a.name, COUNT(*) AS 
+total_appointments
+FROM animals a
+JOIN appointments ap ON a.animalid = 
+ap.animalid
+GROUP BY a.name
+ORDER BY total_appointments DESC
+LIMIT 1;
